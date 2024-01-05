@@ -1,0 +1,69 @@
+---
+title: "WBE-Sample Submittal SC quality check"
+author: "YJ, JH"
+format: 
+  revealjs:
+    smaller: true
+---
+
+## 1. Program overview background (steal from Chris)
+
+-   what is an interlab?
+-   why does it matter?
+-   QAQC SOP
+
+## 2. Workflow for each round (JH)
+
+-   collect samples
+-   collect lab results
+-   compare lab results (use exams distribution as example)
+-   PROBLEM: lab results are not comparable if they are inconsistent or missing data or lack QAQC
+-   we clean them
+
+## 3. Ease of use and efficiency (JH)
+
+-   but the cleaning is cumbersome and easy to miss steps (x 20 labs)
+-   (tidy house points below) - SOP, ...., -app
+-   separation from base code have all the issues flagged through the app screening before we generate reports (workflow diagram)
+
+## 4. Establishing the collaboration 
+
+-   Use **GitHub** for version control to enable simultaneous coding by the team.
+
+-   Set multiple branches for difference usage
+
+    **db** - code connect with database (postgres)
+
+    **web** - code render without database connection **(current display version)**
+
+-   Use **Issues** to handling features requests
+
+    ![](img/feature.png)
+
+## 5. App results
+
+**Demo steps**
+
+steps - upload, "public" checks, "internal" drill down checks, submittal (update database)![](img/steps.gif){width="811"}
+
+## 5.1 Main Features
+
+1.  Use **visual plot** to pick out specifically which points are wrong instead of looking or filtering in excel sheet
+
+2.  Use **Tabular summary** of checks to provide an overview according to the SOP.
+
+![](img/plot.png){width="300"}
+
+## 5.2 Solved Challenges
+
+We don't know which method and target the labs will do before we read the file. After add this selection feature we can have quick glance of what the labs do.
+
+-   **Platforms selections**
+
+![](img/method.png){fig-align="left" width="300"}
+
+-   **Targets selections**
+
+![](img/target.png){fig-align="left" width="300"}
+
+## 6. Future developments (JH) - user authentication - migrate to framework which allows for multi-page app - possible integration with "main" registration website
