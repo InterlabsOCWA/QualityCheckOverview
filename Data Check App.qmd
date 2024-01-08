@@ -6,9 +6,12 @@ format:
     smaller: true
 ---
 
-## 1. Program overview background (steal from Chris)
+## 1a. Program overview background (steal from Chris)
 
--   what is an interlab?
+-   what is WSI?
+![](img/WSI.png)
+
+## 1b. what is an interlab?
 -   why does it matter?
 -   QAQC SOP
 
