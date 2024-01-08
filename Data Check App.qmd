@@ -12,19 +12,46 @@ format:
 -   why does it matter?
 -   QAQC SOP
 
-## 2. Workflow for each round (JH)
+## 2a. Workflow - from the field to the respective labs
 
--   collect samples
--   collect lab results
--   compare lab results (use exams distribution as example)
--   PROBLEM: lab results are not comparable if they are inconsistent or missing data or lack QAQC
--   we clean them
+![](img/SampleApparatus.png)
+
+![](img/LabExcelInput.png)
+
+## 2b. Workflow - analysis & reporting
+:::: {.columns}
+
+::: {.column width="30%"}
+Through a ~5000 line Rmarkdown script...
+![](img/code_structure_existing.png)
+:::
+
+::: {.column width="70%"}
+to the interlab results
+![](img/output_report.png)
+:::
+
+::::
+
+
+
 
 ## 3. Ease of use and efficiency (JH)
 
+![](img/workflow_existing.png) 
 -   but the cleaning is cumbersome and easy to miss steps (x 20 labs)
--   (tidy house points below) - SOP, ...., -app
 -   separation from base code have all the issues flagged through the app screening before we generate reports (workflow diagram)
+
+## x. Role
+![](img/exam_analogy.png) 
+
+## x. Role
+![](img/role_analogy.png) 
+
+
+## 6. Future developments (JH) - user authentication - migrate to framework which allows for multi-page app - possible integration with "main" registration website
+
+![](img/present_future_workflow.png) 
 
 ## 4. Establishing the collaboration 
 
@@ -66,4 +93,4 @@ We don't know which method and target the labs will do before we read the file. 
 
 ![](img/target.png){fig-align="left" width="300"}
 
-## 6. Future developments (JH) - user authentication - migrate to framework which allows for multi-page app - possible integration with "main" registration website
+
